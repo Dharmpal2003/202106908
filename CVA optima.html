@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>CVA Optima</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0; /* Light gray background */
+        }
+
+        header {
+            background-color: #333; /* Dark gray header background */
+            color: #fff; /* White text color */
+            padding: 20px;
+        }
+
+        main {
+            display: flex;
+            align-items: flex-start; /* Align items to the start of the flex container */
+            justify-content: space-around; /* Space evenly between items */
+            padding: 20px;
+            max-width: 100%; /* Set maximum width to fill entire screen */
+            margin: 0 auto; /* Center horizontally */
+        }
+
+        .product-images {
+            display: flex;
+            flex-direction: column; /* Arrange images vertically */
+            align-items: center; /* Center images horizontally */
+            flex: 1; /* Occupy remaining space */
+            margin-right: 20px; /* Add space between images and details */
+        }
+
+        .product-details {
+            flex: 1; /* Occupy remaining space */
+            max-width: 50%; /* Limit width of details */
+        }
+
+        .product {
+            margin-bottom: 20px;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .product img {
+            width: 100%; /* Ensure images fill the container */
+            height: auto; /* Ensure images fill the container */
+            object-fit: cover; /* Fill container while preserving aspect ratio */
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            width: 100%;
+        }
+
+        .footer-links {
+            display: flex;
+            flex-direction: row;
+            justify-content: center; /* Align items along the center horizontally */
+        }
+
+        .footer-links a {
+            margin: 0 10px; /* Add some space between the links */
+            color: silver; /* Change the link color */
+            text-decoration: none; /* Remove underline */
+        }
+
+        .footer-links a:hover {
+            color: white; /* Change link color on hover */
+        }
+
+        .action-buttons {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px; /* Add space after the paragraph */
+        }
+
+        .action-buttons button {
+            padding: 10px 20px;
+            margin: 0 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .action-buttons button.buy-now {
+            background-color: grey; /* Orange-red */
+            color: white;
+        }
+
+        .action-buttons button.add-to-cart {
+            background-color: #8B0000; /* Dark red */
+            color: white;
+        }
+
+        .action-buttons button:hover {
+            opacity: 0.8;
+        }
+
+        .logo-container img.logo {
+            max-width: 50%; /* Adjust the maximum width as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="logo-container">
+        <img src="logo.jpeg" alt="Brar's Armory Logo" class="logo">
+    </div>
+</header>
+
+<main>
+    <div class="product-images">
+        <div class="product">
+            <img src="CVA optima.jpg" alt="Benelli SBE">
+        </div>
+        <div class="product">
+            <img src="CVA optima 2.jpg" alt="Benelli SBE">
+        </div>
+    </div>
+    <div class="product-details">
+        <h1>CVA Optima</h1>
+        <p>The CVA Optima is a break-action muzzleloader rifle designed for hunters and shooters who appreciate traditional firearms and the challenge of black powder shooting.</p>
+        <p>This rifle is known for its accuracy and reliability, making it a popular choice among muzzleloader enthusiasts. It features a break-open action for easy loading and cleaning, as well as a durable stainless steel barrel for consistent performance.</p>
+        <p>With its adjustable sights or scope mounts, the CVA Optima offers versatility in aiming options, allowing shooters to customize their setup according to their preferences and shooting conditions.</p>
+        <p>Key features:</p>
+        <ul>
+            <li>Caliber: .50 caliber (other calibers may be available)</li>
+            <li>Action: Break-action, muzzleloader</li>
+            <li>Barrel Length: 24 to 28 inches (may vary depending on model)</li>
+            <li>Stock: Synthetic or wood options available</li>
+            <li>Ignition: 209 primer ignition system</li>
+            <li>Sights: Adjustable fiber optic sights or scope mounts</li>
+            <li>Finish: Stainless steel or blued finish</li>
+            <li>Accuracy: Sub-MOA accuracy with proper load development</li>
+        </ul>
+
+        <div class="action-buttons">
+            <button class="buy-now">Buy Now</button>
+            <button class="add-to-cart">Add to Cart</button>
+        </div> 
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2024 Brar's Armory. All rights reserved.</p>
+    <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</footer>
+
+</body>
+</html>

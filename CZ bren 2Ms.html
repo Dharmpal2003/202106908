@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>CZ Bren 2Ms</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0; /* Light gray background */
+        }
+
+        header {
+            background-color: #333; /* Dark gray header background */
+            color: #fff; /* White text color */
+            padding: 20px;
+        }
+
+        main {
+            display: flex;
+            align-items: flex-start; /* Align items to the start of the flex container */
+            justify-content: space-around; /* Space evenly between items */
+            padding: 20px;
+        }
+
+        .product-images {
+    display: flex;
+    flex-direction: column; /* Arrange images vertically */
+    align-items: center; /* Center images horizontally */
+    flex: 1; /* Occupy remaining space */
+    margin-right: 20px; /* Add space between images and details */
+}
+
+        .product-details {
+            flex: 1; /* Occupy remaining space */
+            max-width: 50%; /* Limit width of details */
+        }
+
+        .product {
+    margin-bottom: 20px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.product img {
+    width: 100%; /* Ensure images fill the container */
+    height: auto; /* Ensure images fill the container */
+    object-fit: cover; /* Fill container while preserving aspect ratio */
+}
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            width: 100%;
+        }
+
+        .footer-links {
+            display: flex;
+            flex-direction: row;
+            justify-content: center; /* Align items along the center horizontally */
+        }
+
+        .footer-links a {
+            margin: 0 10px; /* Add some space between the links */
+            color: silver; /* Change the link color */
+            text-decoration: none; /* Remove underline */
+        }
+
+        .footer-links a:hover {
+            color: white; /* Change link color on hover */
+        }
+        .action-buttons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .action-buttons button {
+            padding: 10px 20px;
+            margin: 0 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .action-buttons button.buy-now {
+            background-color: grey; /* Orange-red */
+            color: white;
+        }
+
+        .action-buttons button.add-to-cart {
+            background-color: #8B0000; /* Dark red */
+            color: white;
+        }
+
+        .action-buttons button:hover {
+            opacity: 0.8;
+        }
+        .logo-container img.logo {
+            max-width: 50%; /* Adjust the maximum width as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="logo-container">
+        <img src="logo.jpeg" alt="Brar's Armory Logo" class="logo">
+        </div>
+</header>
+
+<main>
+    <div class="product-images">
+        <div class="product">
+            <img src="CZ bren 2Ms.jpg" alt="Benelli SBE">
+        </div>
+        <div class="product">
+            <img src="CZ bren 2Ms (2).jpg" alt="Benelli SBE">
+        </div>
+        
+    </div>
+    <div class="product-details">
+        <h1>CZ Bren 2Ms</h1>
+        <p>The CZ Bren 2Ms is a modern, modular assault rifle designed and manufactured by Česká zbrojovka Uherský Brod (CZUB) in the Czech Republic.</p>
+        <p>It is the latest iteration of the CZ Bren series and is known for its compact design, lightweight construction, and versatility. The Bren 2Ms is chambered in various calibers, including 5.56x45mm NATO and 7.62x39mm, offering users the flexibility to choose their preferred cartridge for different applications.</p>
+        <p>Key features:</p>
+        <ul>
+            <li>Caliber: 5.56x45mm NATO, 7.62x39mm (other calibers may be available)</li>
+            <li>Action: Gas-operated, selective-fire (semi-automatic and full-automatic)</li>
+            <li>Barrel Length: 11 to 14 inches (may vary depending on model and configuration)</li>
+            <li>Weight: Approximately 6 to 7 pounds (may vary depending on model and configuration)</li>
+            <li>Stock: Adjustable folding stock with multiple length-of-pull positions</li>
+            <li>Handguard: Modular aluminum handguard with Picatinny rails for attaching accessories</li>
+            <li>Sights: Flip-up iron sights or compatibility with various optical sights</li>
+            <li>Magazine Capacity: Standard capacity varies depending on caliber and magazine type</li>
+        </ul>
+    </div>
+</main>
+<div class="action-buttons">
+    <button class="buy-now">Buy Now</button>
+    <button class="add-to-cart">Add to Cart</button>
+</div>
+
+<footer>
+    <p>&copy; 2024 Brar's Armory. All rights reserved.</p>
+    <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</footer>
+
+</body>
+</html>
